@@ -1,0 +1,31 @@
+.welcome {
+    position: relative;
+    z-index: 10;
+    /* border: 3px solid black; */
+    /* background-image: url(./assets/BG-CONTACTFORM-LANDINGPAGE-WANCLOUDS.jpg); */
+    width: 716px;
+    height: 607px;
+  }
+  
+  h1 {
+    font-family: 'EA';
+    color: white;
+    font-size: 120px;
+    line-height: 107px;
+    font-weight: 100;
+    margin: 52px 0px;
+  }
+  
+  .logo {
+    height: 12vw;
+  }
+  
+  .button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 21px;
+    background-color: #1380C3;
+    color: white;
+    padding: 18px 30px;
+    cursor: pointer;
+  }

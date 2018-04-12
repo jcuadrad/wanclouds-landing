@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Background from './assets/BG-LANDINGPAGE-WANCLOUDS.jpg';
-import Logo from './assets/LOGO-LANDINGPAGE-WANCLOUDS.png';
 import './App.css';
+
+import Form from './components/Form/Form'
+import Welcome from './components/Welcome/Welcome'
 
 class App extends Component {
 
@@ -23,24 +25,7 @@ class App extends Component {
       <div className="container">
         { this.state.showForm ? <div className="dim"></div> : null }
         <div className="App">
-          { this.state.showForm ?
-          <div className="form">
-            <div className="close" onClick={this.toggleForm}>X</div>
-            <form action="submit">
-              <label>Full Name</label>
-              <input type="text"/>
-              <label>Email</label>
-              <input type="text"/>
-              <label>Message</label>
-              <textarea name="message" id="" cols="30" rows="8"></textarea>
-              <button>SEND</button>
-            </form>
-          </div> 
-          : <div className="welcome">
-            <img src={Logo} alt="Logo" className="logo"/>
-            <h1>COMING <br/> SOON</h1>
-            <span className="button" onClick={this.toggleForm}>Contact Us</span>
-          </div> }
+          { this.state.showForm ? <Form toggle={this.toggleForm}/> : <Welcome toggle={this.toggleForm}/> }
         </div>
       </div>
     );
