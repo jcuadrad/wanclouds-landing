@@ -3,9 +3,7 @@ import Logo from '../../assets/LOGO-LANDINGPAGE-WANCLOUDS.png';
 import './Welcome.css'
 
 class Welcome extends Component {
-    constructor(props) {
-        super(props);
-    }
+
     render() { 
         return (
             <div className="welcome">

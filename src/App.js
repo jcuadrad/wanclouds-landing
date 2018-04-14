@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Background from './assets/BG-LANDINGPAGE-WANCLOUDS.jpg';
 import './App.css';
 
 import Form from './components/Form/Form'
